@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library in Philly</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style> 
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100%;
+        }
+
+        .twitter{
+            float: left;
+        }
+   
+ 
+
+    </style>
+    <script>
+        var map;
+        var infowindow;
+        function initMap() {
+            var pyrmont = {lat: 39.952583 , lng:-75.165222 }; // Location of philly 
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: pyrmont,
+                zoom: 15
+            });
+
+            infowindow = new google.maps.InfoWindow();
+
+            var service = new google.maps.places.PlacesService(map);
+            service.nearbySearch({
+                location: pyrmont,
+                radius: 500,
+                types: ['library']// Searching Library
+            }, callback);
+        }
+
+        function callback(results, status) {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+                for (var i = 0; i < results.length; i++) {
+                    createMarker(results[i]);
+                }
+            }
+        }
+
+        function createMarker(place) {
+            var placeLoc = place.geometry.location;
+            var marker = new google.maps.Marker({
+                map: map,
+                position: place.geometry.location
+            });
+
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.setContent(place.name);
+                infowindow.open(map, this);
+            });
+        }
+
+    </script>
+</head>
+<body>
+<div class="twitter">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="ZW&HWL Elibrary">Tweet</a> <!-- Twitter share button set-->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+
+<div id="map"></div><!--Set Google Maps API-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK8gbE5NUVFPva2plI6Ed40RJy0UKc2sI&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>ß
