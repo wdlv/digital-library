@@ -14,3 +14,6 @@ Dynamic pages and search engines
 Web UI connecting MySQL
 
 NY Times API and Google Book API integration
+
+# Demo
+Check demo.pdf
