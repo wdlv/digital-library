@@ -18,22 +18,22 @@ NY Times API and Google Book API integration
 # Demo
 
 ### Log in:
-![demo](https://github.com/woodenleaves/The_Library/tree/master/images/demo/1.png)
+![demo](The_Library/images/demo/1.png)
 
 ### Search:
-![demo](https://github.com/woodenleaves/The_Library/tree/master/images/demo/2.png)
+![demo](The_Library/images/demo/2.png)
 
 ### Dashboard:
-![demo](https://github.com/woodenleaves/The_Library/tree/master/images/demo/3.png)
+![demo](The_Library/images/demo/3.png)
 
 ### NY Times API
-![demo](https://github.com/woodenleaves/The_Library/tree/master/images/demo/4.png)
+![demo](The_Library/images/demo/4.png)
 
 ### Google Books API
-![demo](https://github.com/woodenleaves/The_Library/tree/master/images/demo/5.png)
+![demo](The_Library/images/demo/5.png)
 
 ### Edit
-![demo](https://github.com/woodenleaves/The_Library/tree/master/images/demo/7.png)
+![demo](The_Library/images/demo/7.png)
 
 ### Contact
-![demo](https://github.com/woodenleaves/The_Library/tree/master/images/demo/8.png)
+![demo](The_Library/images/demo/8.png)
