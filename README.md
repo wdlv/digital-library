@@ -4,7 +4,7 @@ Author: Hongwei Liu, Zhao Wang
 Key tools: Bootstrap, MySQL, JavaScript, jQuery, Ajax, PHP, HTML, CSS
 
 # Description:
-A online library where people can search/add/update/delete books information and retrieve information from integrated Google Book and New York Time APIs.
+An online library where people can search/add/update/delete books information and retrieve information from integrated Google Book and New York Time APIs.
 
 # Features included:
 Secure login with SQL injection prevention
