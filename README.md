@@ -1,7 +1,7 @@
 # The Library
 Author: Hongwei Liu, Zhao Wang
 
-Key tools: Bootstrap, MySQL, JavaScript, jQuery, Ajax, PHP, HTML, CSS
+Key tools: Bootstrap, JavaScript, jQuery, Ajax, PHP, HTML, CSS， MySQL
 
 # Description:
 An online library where people can search/add/update/delete books information and retrieve information from integrated Google Book and New York Time APIs.
